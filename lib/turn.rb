@@ -2,6 +2,8 @@ def turn(board)
   puts "Please enter 1-9:"
   indice = gets.chomp
   indice = input_to_index(indice)
+  valid_move?(board,indice)
+  move(board, indice, valor = "X")
 end
 
 # code your #valid_move? method here
