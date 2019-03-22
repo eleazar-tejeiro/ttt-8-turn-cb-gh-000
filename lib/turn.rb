@@ -1,6 +1,6 @@
 def turn(board)
   puts "Please enter 1-9:"
-  
+
 end
 
 # code your #valid_move? method here
