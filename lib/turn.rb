@@ -6,7 +6,7 @@ end
 # code your #valid_move? method here
 def valid_move?(tablero, indice)
   indice = indice.to_i
-  if position_taken?(tablero, indice) && indicie > 0
+  if position_taken?(tablero, indice) && indice > 0
     return true
   else
     return false
