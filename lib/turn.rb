@@ -4,6 +4,7 @@ def turn(board)
   indice = input_to_index(indice)
   valid_move?(board,indice)
   move(board, indice, valor = "X")
+  display_board(board)
 end
 
 # code your #valid_move? method here
