@@ -28,9 +28,7 @@ end
 
 def input_to_index(input)
   input = input.to_i
-  if input > 0
     input = input - 1;
-  end
   return input
 end
 
