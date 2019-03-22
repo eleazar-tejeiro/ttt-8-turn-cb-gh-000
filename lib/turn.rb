@@ -1,10 +1,16 @@
 def turn(board)
-  puts "Please enter 1-9:"
-  indice = gets.chomp
-  indice = input_to_index(indice)
-  valid_move?(board,indice)
-  move(board, indice, valor = "X")
-  display_board(board)
+  validation = false
+  until (validation != true)
+    puts "Please enter 1-9:"
+    indice = gets.chomp
+    indice = input_to_index(indice)
+    if indice >= 0
+      validation = true
+    end
+    valid_move?(board,indice)
+    move(board, indice, valor = "X")
+    display_board(board)
+  end
 end
 
 # code your #valid_move? method here
