@@ -1,11 +1,11 @@
 def turn(board)
   puts "Please enter 1-9:"
-
+  
 end
 
 # code your #valid_move? method here
 def valid_move?(tablero, indice)
-  indice = indice.to_i
+  indice = input_to_index(indice)
   if position_taken?(tablero, indice) && indice >= 0
     return true
   else
