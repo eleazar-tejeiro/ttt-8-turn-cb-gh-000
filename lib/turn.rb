@@ -1,6 +1,6 @@
 def turn(board)
   validation = false
-  until (validation != true)
+  until (validation)
     puts "Please enter 1-9:"
     indice = gets.chomp
     indice = input_to_index(indice)
